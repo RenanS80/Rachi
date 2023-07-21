@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:wght@700&family=Sora:wght@600&display=swap');
+
+:root {
+    --dark-10: #293145;
+    --dark-20: #6E7275;
+    --dark-30: #DBDBDB;
+    --white: #FFF;
+    --blue-10: #0F9AFE;
+    --blue-20: #EFF8FF;
+    font-size: 62.5%;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Sora", sans-serif;
+    background-color: var(--white);
+    color: var(--dark-20);
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+    color: var(--dark-10);
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.4rem;
+}
+
+.container {
+    max-width: 122rem;
+    padding: 0 1.8rem;
+    margin: 0 auto;
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-20);
+}
+
+/* ---- Header ---- */
+header {
+    padding: 2rem 0;
+}
+
+header .container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .header__logo {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    padding: 2rem 3.3rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all .4s ease;
+}
+
+nav ul li a:hover {
+    opacity: 0.8;
+}
