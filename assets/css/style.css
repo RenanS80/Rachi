@@ -49,11 +49,9 @@ h4 {
     font-size: 2.4rem;
 }
 
-.container {
-    max-width: 122rem;
-    padding: 0 1.8rem;
-    margin: 0 auto;
-    display: flex;
+button {
+    cursor: pointer;
+    transition: all .4s ease;
 }
 
 ul {
@@ -63,6 +61,18 @@ ul {
 a {
     text-decoration: none;
     color: var(--dark-20);
+    transition: all .4s ease;
+}
+
+a:hover, button:hover {
+    opacity: 0.85;
+}
+
+.container {
+    max-width: 122rem;
+    padding: 0 1.8rem;
+    margin: 0 auto;
+    display: flex;
 }
 
 /* ---- Header ---- */
@@ -93,6 +103,33 @@ nav ul li a {
     transition: all .4s ease;
 }
 
-nav ul li a:hover {
-    opacity: 0.8;
+/* ---- Section Hero ---- */
+.hero {
+    background-color: var(--blue-20);
+    height: 60vh;
+}
+
+.hero .container {
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.hero button {
+    border-radius: 50px;
+    background: var(--blue-10);
+    box-shadow: 1px 3px 4px 0px rgba(19, 125, 224, 0.50);
+    padding: 1.6rem 3.6rem;
+    border: none;
+    color: var(--white);
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
