@@ -133,3 +133,67 @@ nav ul li a {
     font-size: 1.6rem;
     font-weight: 600;
 }
+
+/* ---- Section Functionality ---- */
+#functionality .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+}
+
+.functionality__title {
+    margin-top: 5.6rem;
+}
+
+.functionality__content {
+    display: flex;
+}
+
+.functionality__item {
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+.functionality__item--title {
+    color: var(--dark-10);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 2.8rem;
+    margin-bottom: 1.6rem;
+}
+
+.functionality__item p:last-child {
+    color: var(--dark-20);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 2.6rem; 
+}
+
+/* ---- Section App ---- */
+#app {
+    background-color: var(--blue-20);
+}
+
+#app .container {
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 1.8rem;
+}
+
+.app__title p {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    max-width: 450px;
+    color: var(--dark-20);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 26px; 
+}
+
+.app__group-buttons {
+    display: flex;
+    gap: 20px;
+}

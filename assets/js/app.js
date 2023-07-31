@@ -1,20 +1,43 @@
-const functionality = [
+const functionalities = [
     {
         id: 1,
         name: 'Crie conexões',
-        description: 'Lorem ipsum dolor sit amet, consecteteu.',
-        imgUrl: 'assets/connections.svg'
+        description: `Lorem ipsum dolor sit amet, consecteteu.`,
+        imgUrl: 'assets/images/connections.svg'
     },
     {
         id: 2,
         name: '100% gratuito',
         description: 'Lorem ipsum dolor sit amet, consecteteu.',
-        imgUrl: 'assets/free.svg'
+        imgUrl: 'assets/images/free.svg'
     },
     {
         id: 3,
         name: 'Compartilhamento',
         description: 'Lorem ipsum dolor sit amet, consecteteu.',
-        imgUrl: 'assets/sharing.svg'
+        imgUrl: 'assets/images/sharing.svg'
     }
-]
+];
+
+const funcContent = document.querySelector('.functionality__content');
+
+functionalities.map(func => {
+    const div = document.createElement('div');
+    div.classList.add('functionality__item');
+    funcContent.appendChild(div);
+    console.log(div);
+
+    const img = document.createElement('img');
+    img.src = func.imgUrl;
+    img.alt = func.name;
+    div.appendChild(img);  
+
+    const pTitle = document.createElement('p');
+    pTitle.classList.add('functionality__item--title');
+    pTitle.innerText = func.name;
+    div.appendChild(pTitle);
+
+    const pDescription = document.createElement('p');
+    pDescription.innerText = func.description;
+    div.appendChild(pDescription);
+});
