@@ -2,7 +2,7 @@ const functionalities = [
     {
         id: 1,
         name: 'Crie conexões',
-        description: `Lorem ipsum dolor sit amet, consecteteu.`,
+        description: 'Lorem ipsum dolor sit amet, consecteteu.',
         imgUrl: 'assets/images/connections.svg'
     },
     {
@@ -25,7 +25,6 @@ functionalities.map(func => {
     const div = document.createElement('div');
     div.classList.add('functionality__item');
     funcContent.appendChild(div);
-    console.log(div);
 
     const img = document.createElement('img');
     img.src = func.imgUrl;
