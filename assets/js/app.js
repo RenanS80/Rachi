@@ -36,7 +36,11 @@ functionalities.map(func => {
     pTitle.innerText = func.name;
     div.appendChild(pTitle);
 
+    const divDescription = document.createElement('div');
+    divDescription.classList.add('maxWidth210');
+    div.appendChild(divDescription);
+
     const pDescription = document.createElement('p');
     pDescription.innerText = func.description;
-    div.appendChild(pDescription);
+    divDescription.appendChild(pDescription);
 });

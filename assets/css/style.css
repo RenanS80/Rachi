@@ -151,10 +151,18 @@ nav ul li a {
 
 .functionality__content {
     display: flex;
+    width: 100%;
+}
+
+.maxWidth210 {
+    max-width: 21rem;
 }
 
 .functionality__item {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
     width: 100%;
     margin-bottom: 10rem;
@@ -248,7 +256,7 @@ nav ul li a {
 }
 
 .plan__card:hover {
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    box-shadow: 0 0 1.1rem rgba(33,33,33,.2); 
 }
 
 .plan__card {
@@ -291,30 +299,30 @@ nav ul li a {
 }
 
 .plan__card-head > div span:first-child {
-    font-size: 20px;
-    margin-top: 8px;
+    font-size: 2rem;
+    margin-top: .8rem;
 }
 
 .plan__card-head > div span:nth-child(2) {
-    font-size: 50px;
+    font-size: 5rem;
 }
 
 .plan__card-head > div span:last-child {
     font-size: 2.6rem;
     align-self: flex-end;
-    margin-bottom: 8px;
+    margin-bottom: .8rem;
 }
 
 .plan__card-description {
-    margin: 45px 0;
+    margin: 4.5rem 0;
 }
 
 .plan__card .plan__card-description p,
 .plan__card--preferred .plan__card-description p {
     font-family: var(--inter);
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 400;
-    line-height: 25px; 
+    line-height: 2.5rem; 
 }
 
 .plan__card .plan__card-description p {
@@ -326,32 +334,32 @@ nav ul li a {
 }
 
 .plan__container-cards button {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
-    padding: 12px 80px;
+    padding: 1.2rem 8rem;
 }
 
 .plan__card button {
-    box-shadow: 1px 3px 4px 0px rgba(19, 125, 224, 0.50);  
+    box-shadow: .1rem .3rem .4rem rgba(19, 125, 224, 0.50);  
 }
 
 .plan__card--preferred button {
-    box-shadow: 1px 3px 10px 0px rgba(17, 37, 56, 0.50);
+    box-shadow: .1rem .3rem 1rem 0 rgba(17, 37, 56, 0.50);
 }
 
 .tag__preffered {
     background-color: var(--blue-10);
     color: var(--white);
     text-align: center;
-    padding: 8px 32px;
-    border-radius: 15px;
+    padding: .8rem 3.2rem;
+    border-radius: 1.5rem;
 }
 
 .tag__preffered p {
     font-family: var(--inter);
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 600;
-    letter-spacing: 2.8px;
+    letter-spacing: 0.28rem;
     text-transform: uppercase;
 }
 
@@ -388,49 +396,48 @@ nav ul li a {
 }
 
 .contact__form {
-    margin-top: 93px;
+    margin-top: 9.3rem;
     display: flex;
-    gap: 40px;
+    gap: 4rem;
 }
 
 .contact__form input {
     background-color: transparent;
     border-right: none;
-    border-bottom: 1px solid var(--white);
+    border-bottom: .1rem solid var(--white);
     color: var(--white);
     font-family: var(--inter);
-    width: 280px;
-    padding: 10px 0;
+    width: 28rem;
+    padding: 1rem 0;
 }
 
 .contact__form input:focus {
-    border-bottom: 1px solid var(--blue-10);
-    transition: 0.2s ease-in-out;
+    border-bottom: .1rem solid var(--blue-10);
+    transition: .2s ease-in-out;
     outline: none;
 }
 
 .contact__form input::placeholder {
     color: var(--white);
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1.7rem;
 }
 
 .contact__form input:focus::placeholder {
     transition: 0.4s ease-in-out;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .contact__form button {
     box-shadow: none;
-    padding: 8px 32px;
-    font-size: 18px;
+    padding: .8rem 3.2rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
 
 /* ---- Footer ---- */
 footer .container {
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -439,7 +446,7 @@ footer .container {
 footer .container p {
     padding: 40px 0;
     color: var(--dark-10);
-    font-size: 20px;
+    font-size: 2rem;
 }
  
  
