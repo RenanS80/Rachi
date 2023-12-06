@@ -75,9 +75,9 @@ a:hover, button:hover {
 }
 
 .btn {
-    border-radius: 50px;
+    border-radius: 5rem;
     background: var(--blue-10);
-    box-shadow: 1px 3px 4px 0px rgba(19, 125, 224, 0.50);
+    box-shadow: 0.1rem 0.3rem 0.4rem 0 rgba(19, 125, 224, 0.50);
     border: none;
     color: var(--white);
     font-family: var(--inter);
@@ -129,7 +129,7 @@ nav ul li a {
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 6rem;
 }
 
 .hero button {
@@ -181,7 +181,7 @@ nav ul li a {
     text-align: center;
     font-family: var(--inter);
     font-weight: 400;
-    line-height: 2.6rem; 
+    line-height: 2.6rem;
 }
 
 /* ---- Section App ---- */
@@ -196,18 +196,18 @@ nav ul li a {
 }
 
 .app__title p {
-    margin-top: 24px;
-    margin-bottom: 32px;
-    max-width: 450px;
+    margin-top: 2.4rem;
+    margin-bottom: 3.2rem;
+    max-width: 45rem;
     color: var(--dark-20);
     font-family: var(--inter);
     font-weight: 400;
-    line-height: 26px; 
+    line-height: 2.6rem;
 }
 
 .app__group-buttons {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
 }
 
 /* ---- Section Plan ---- */
@@ -221,8 +221,8 @@ nav ul li a {
     text-align: center;
 }
 
-.plan__title > div,
-.contact__title > div {
+.plan__title>div,
+.contact__title>div {
     margin-top: 1.6rem;
     max-width: 57rem;
 }
@@ -233,11 +233,14 @@ nav ul li a {
     font-family: var(--inter);
     font-size: 1.8rem;
     font-weight: 400;
-    line-height: 2.5rem; 
+    line-height: 2.5rem;
 }
 
 .plan__container-cards {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 3rem;
     margin-top: 9.6rem;
 }
@@ -256,7 +259,7 @@ nav ul li a {
 }
 
 .plan__card:hover {
-    box-shadow: 0 0 1.1rem rgba(33,33,33,.2); 
+    box-shadow: 0 0 1.1rem rgba(33, 33, 33, .2);
 }
 
 .plan__card {
@@ -270,44 +273,44 @@ nav ul li a {
 .plan__card--preferred .plan__card-head div:first-child {
     flex-direction: column;
     align-items: center;
-    display:flex;
+    display: flex;
     gap: 1.2rem;
     justify-content: center;
 }
 
-.plan__card-head > div {
+.plan__card-head>div {
     display: flex;
 }
 
-.plan__card .plan__card-head > div {
+.plan__card .plan__card-head>div {
     margin-top: 5.8rem;
 }
 
-.plan__card .plan__card-head > div span,
-.plan__card--preferred .plan__card-head > div span {
+.plan__card .plan__card-head>div span,
+.plan__card--preferred .plan__card-head>div span {
     font-family: var(--roboto);
     font-weight: 700;
 }
 
-.plan__card .plan__card-head > div span {
+.plan__card .plan__card-head>div span {
     color: var(--dark-10);
 }
 
 .plan__card--preferred .plan__card-head h4,
-.plan__card--preferred .plan__card-head > div span {
+.plan__card--preferred .plan__card-head>div span {
     color: var(--white);
 }
 
-.plan__card-head > div span:first-child {
+.plan__card-head>div span:first-child {
     font-size: 2rem;
     margin-top: .8rem;
 }
 
-.plan__card-head > div span:nth-child(2) {
+.plan__card-head>div span:nth-child(2) {
     font-size: 5rem;
 }
 
-.plan__card-head > div span:last-child {
+.plan__card-head>div span:last-child {
     font-size: 2.6rem;
     align-self: flex-end;
     margin-bottom: .8rem;
@@ -322,7 +325,7 @@ nav ul li a {
     font-family: var(--inter);
     font-size: 1.8rem;
     font-weight: 400;
-    line-height: 2.5rem; 
+    line-height: 2.5rem;
 }
 
 .plan__card .plan__card-description p {
@@ -340,7 +343,7 @@ nav ul li a {
 }
 
 .plan__card button {
-    box-shadow: .1rem .3rem .4rem rgba(19, 125, 224, 0.50);  
+    box-shadow: .1rem .3rem .4rem rgba(19, 125, 224, 0.50);
 }
 
 .plan__card--preferred button {
@@ -365,7 +368,7 @@ nav ul li a {
 
 /* ---- Section Contact ---- */
 #contact {
-    background-image: linear-gradient(rgba(41, 49, 69, 0.70), rgba(41, 49, 69, 0.70)),  url('../images/contact.png');
+    background-image: linear-gradient(rgba(41, 49, 69, 0.70), rgba(41, 49, 69, 0.70)), url('../images/contact.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left top;
@@ -392,7 +395,7 @@ nav ul li a {
     font-family: var(--inter);
     font-size: 1.8rem;
     font-weight: 400;
-    line-height: 2.5rem; 
+    line-height: 2.5rem;
 }
 
 .contact__form {
@@ -444,9 +447,181 @@ footer .container {
 }
 
 footer .container p {
-    padding: 40px 0;
+    padding: 4rem 0;
     color: var(--dark-10);
     font-size: 2rem;
 }
- 
- 
+
+
+/* ---- Media queries ---- */
+@media (max-width: 992px) {
+    .plan__container-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 7rem;
+    }
+
+    .plan__card,
+    .plan__card--preferred {
+        width: 42rem;
+    }
+}
+
+@media (max-width: 890px) {
+
+    .hero__image,
+    .hero br:first-child {
+        display: none;
+    }
+
+    .hero .container {
+        justify-content: center;
+    }
+
+    #app .container {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .app__title p {
+        max-width: 100%;
+    }
+
+    .app__group-buttons {
+        justify-content: center;
+    }
+
+    .app__image {
+        display: none;
+    }
+}
+
+
+@media (max-width: 760px) {
+    h1 {
+        font-size: 3.6rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+    }
+    
+    h3 {
+        font-size: 2.4rem;
+    }
+    
+    h4 {
+        font-size: 1.8rem;
+    }
+    
+    nav {
+        display: none;
+        /* esconde os itens da nav */
+    }
+
+    .menu-toggle {
+        width: 4rem;
+        /* define o tamanho do container que engloba o menu hambúrguer */
+        height: 3rem;
+        margin-right: 2rem;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: var(--dark-10);
+        /* cria os três traços do menu hambúrguer */
+        height: 0.5rem;
+        width: 100%;
+        margin: 0.6rem auto;
+        transition-duration: 0.3s;
+        border-radius: 0.5rem;
+    }
+
+    /* Fullscreen ao ser clicado */
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--blue-20);
+        z-index: 10;
+        /* para ficar posicionado sobre os demais elementos da página */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-section.on nav {
+        display: block;
+        /* exibe os itens da nav que foram escondidos no primeiro passo (só serão exibidos caso estejam com a classe "on" - que será manipulada no Javascript) */
+    }
+
+    /* Faz com que o container do hambúrguer fique à direita da nav */
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+    }
+
+    /* Manipula a forma da primeira barra para virar um X */
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(0.7rem, 0.7rem);
+    }
+
+    /* Esconde a segunda barra */
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    /* Manipula a forma da primeira terceira para virar um X */
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(0.8rem, -0.9rem);
+    }
+
+    /* Itens ficam ao centro e um abaixo do outro */
+    .menu-section.on nav ul {
+        text-align: center;
+        display: block;
+    }
+
+    .menu-section.on nav ul a {
+        transition-duration: 0.5s;
+        font-size: 3rem;
+        line-height: 4rem;
+        /* aumenta a distância de um item para o outro */
+        display: block;
+    }
+
+    footer .container p {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 620px) {
+    .functionality__content {
+        flex-wrap: wrap;
+    }
+
+    .functionality__item {
+        margin-bottom: 3.5rem;
+    }
+
+    .functionality__item:last-child {
+        margin-bottom: 5.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact__form {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 420px) {
+    .app__group-buttons {
+        flex-direction: column;
+    }
+}

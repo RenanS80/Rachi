@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="author" content="Renan Soares">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rachi</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Rachi</title>
 </head>
 
 <body>
@@ -15,29 +16,38 @@
                 <img src="assets/images/logo.svg" alt="Rachi">
                 <h4>Rachi</h4>
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#functionality">Funcionalidades</a>
-                    </li>
-                    <li>
-                        <a href="#app">App</a>
-                    </li>
-                    <li>
-                        <a href="#plan">Planos</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contato</a>
-                    </li>
-                </ul>
-            </nav>
+
+            <div class="menu-section">
+                <div class="menu-toggle">
+                    <div class="one"></div>       
+                    <div class="two"></div>       
+                    <div class="three"></div>     
+                </div>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#functionality">Funcionalidades</a>
+                        </li>
+                        <li>
+                            <a href="#app">App</a>
+                        </li>
+                        <li>
+                            <a href="#plan">Planos</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
     <section class="hero">
         <div class="container">
             <div class="hero__content">
-                <h1>Rachi, <br />
+                <h1>Rachi <br />
                     é tudo que você <br />
                     precisa em um só lugar.</h1>
                 <div>
@@ -80,9 +90,8 @@
                 </div>
             </div>
 
-                <div class="app__image">
-                    <img src="assets/images/download.svg" alt="">
-                </div>
+            <div class="app__image">
+                 <img src="assets/images/download.svg" alt="">
             </div>
         </div>
     </section>
@@ -178,6 +187,7 @@
 
     
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/menu.js"></script>
     <script src="assets/js/plan-card.js"></script>
 </body>
 </html>
